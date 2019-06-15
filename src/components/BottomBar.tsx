@@ -16,7 +16,7 @@ const BottomBar = () => {
     <div
       className="
         flex justify-around items-center
-        fixed left-0 bottom-0 p-4 bg-white w-screen
+        fixed left-0 bottom-0 p-4 bg-white w-screen z-10
       "
       style={{
         boxShadow:
