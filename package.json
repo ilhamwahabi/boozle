@@ -37,7 +37,9 @@
     "fix": "npm run fix:lint && npm run fix:prettier",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "predeploy": "yarn build",
+    "deploy": "surge public --domain https://boozle.surge.sh"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
