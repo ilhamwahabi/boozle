@@ -14,7 +14,7 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       <FindMatch />
-      Test {state.example}
+      {/* Test {state.example} */}
     </div>
   );
 }
