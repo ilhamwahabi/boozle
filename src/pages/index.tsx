@@ -3,20 +3,17 @@ import React from "react";
 import SEO from "../components/seo";
 import FindMatch from "../components/findMatch";
 
-import Navbar from "../components/Navbar";
-import BottomBar from "../components/BottomBar";
+import Layout from "../components/layout";
 
 function IndexPage() {
   return (
-    <div className="bg-gray-100 h-screen">
+    <Layout>
       <SEO
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      <Navbar />
       <FindMatch />
-      <BottomBar />
-    </div>
+    </Layout>
   );
 }
 
