@@ -3,6 +3,7 @@ import React from "react";
 import SEO from "../components/seo";
 
 import Navbar from "../components/Navbar";
+import BottomBar from "../components/BottomBar";
 
 function IndexPage() {
   return (
@@ -12,6 +13,7 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       <Navbar />
+      <BottomBar />
     </div>
   );
 }
