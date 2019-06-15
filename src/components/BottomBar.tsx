@@ -34,19 +34,19 @@ const BottomBar = () => {
       <BottomBarItem
         icon={faChartBar}
         label="Statistic"
-        to="/statistic"
+        path="/statistic"
         selected={pathname === "/statistic"}
       />
       <BottomBarItem
         icon={faFutbol}
         label="Match"
-        to="/match"
+        path="/match"
         selected={pathname === "/match"}
       />
       <BottomBarItem
         icon={faUser}
         label="Profile"
-        to="/profile"
+        path="/profile"
         selected={pathname === "/profile"}
       />
     </div>
