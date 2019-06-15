@@ -10,10 +10,10 @@ import React from "react";
 function MatchDetail() {
   return (
     <div className="flex flex-col items-center bg-main min-h-screen">
-      <div className="text-center ml-4 text-4xl text-primary font-medium self-start">Match Detail</div>
-      <div className="text-center ml-4 text-lg mb-4 font-medium self-start">Liga Karet Kuningan</div>
+      <div className="text-center text-4xl text-primary font-medium self-start">Match Detail</div>
+      <div className="text-center text-lg mb-4 font-medium self-start">Liga Karet Kuningan</div>
       <div className="flex justify-center items-center w-full">
-        <div className="mx-4 w-full flex flex-col justify-center items-center shadow-lg bg-white rounded-large">
+        <div className="w-full flex flex-col justify-center items-center shadow-lg bg-white rounded-large">
           <div className="mt-4 flex flex-row justify-center items-center">
             <div className="flex flex-col justify-center items-center">
               <img src={require("../images/flash.png")} className="w-20"/>
@@ -72,8 +72,8 @@ function MatchDetail() {
         </div>
       </div>
       <div className="mt-3 flex justify-center items-center w-full">
-        <div className="mx-4 w-full flex flex-col justify-center items-center shadow-lg bg-white rounded-large">
-          <div className="mt-2 mx-4 w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center shadow-lg bg-white rounded-large">
+          <div className="mt-2 w-full flex flex-col justify-center items-center">
             <div className="my-3 font-semibold">LEAGUE STANDING</div>
             <div className="px-6 flex w-full flex-row justify-between items-center">
               <table className="w-full mb-3 border border-t-0 border-l-0 border-r-0 border-gray-600">

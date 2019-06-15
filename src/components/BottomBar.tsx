@@ -10,13 +10,14 @@ import {
 import BottomBarItem from "./BottomBarItem";
 
 const BottomBar = () => {
-  const { pathname } = window.location;
+  let pathname;
+  if (typeof window !== `undefined`) pathname = window.location.pathname;
 
   return (
     <div
       className="
         flex justify-around items-center
-        fixed left-0 bottom-0 p-4 bg-white w-screen
+        fixed left-0 bottom-0 p-4 bg-white w-screen z-10
       "
       style={{
         boxShadow:
