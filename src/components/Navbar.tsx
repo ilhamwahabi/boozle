@@ -8,7 +8,7 @@ const Navbar = () => {
       className="
         flex justify-center items-center
         text-orange-600 text-xl font-bold
-        p-4 bg-white fixed left-0 top-0 w-screen
+        p-4 bg-white fixed left-0 top-0 w-screen shadow-md
       "
     >
       <FontAwesomeIcon
