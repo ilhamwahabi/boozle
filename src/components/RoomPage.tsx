@@ -24,7 +24,7 @@ function renderRoom(data) {
             <img src={data.img} className="m-2 w-8"/>
             <div className="flex flex-col">
               <div className="font-semibold text-base">{data.team}</div>
-              <div className="text-xs text-gray-600">Room ID: {data.id}</div>
+              <div className="text-xs text-gray-600">Room ID: {data._id}</div>
             </div>
           </div>
           <div className="px-2 pb-2">
@@ -73,7 +73,7 @@ function RoomPage() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center bg-main min-h-screen">
+    <div className="flex flex-1 flex-col items-center bg-main min-h-full">
       <div className="text-center text-4xl text-primary font-medium self-start">Room List</div>
       <div className="text-center text-lg mb-2 font-medium self-start">Choose Your Room</div>
       <div className="mb-2 flex justify-center items-center w-full">
