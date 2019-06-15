@@ -1,6 +1,7 @@
 import React from "react";
 
 import SEO from "../components/seo";
+import FindMatch from "../components/findMatch";
 
 function IndexPage() {
   return (
@@ -9,7 +10,7 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      Test
+      <FindMatch />
     </div>
   );
 }
