@@ -27,6 +27,8 @@ module.exports = {
     textColor: theme => ({
       ...theme('colors'),
       'primary': '#f3694f',
+      'secondary': '#999999',
+      'strong-secondary': '#808080'
     })
   },
   variants: {},
