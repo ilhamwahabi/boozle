@@ -1,6 +1,7 @@
 import React from "react";
 
 import SEO from "../components/seo";
+import FindMatch from "../components/findMatch";
 
 import Navbar from "../components/Navbar";
 import BottomBar from "../components/BottomBar";
@@ -13,6 +14,7 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       <Navbar />
+      <FindMatch />
       <BottomBar />
     </div>
   );
