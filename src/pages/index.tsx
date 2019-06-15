@@ -1,20 +1,19 @@
 import React from "react";
-import { observer } from "mobx-react-lite";
 
 import SEO from "../components/seo";
 
-import state from "../state";
+import Navbar from "../components/Navbar";
 
 function IndexPage() {
   return (
-    <div>
+    <div className="bg-gray-100 h-screen">
       <SEO
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      Test {state.example}
+      <Navbar />
     </div>
   );
 }
 
-export default observer(IndexPage);
+export default IndexPage;
