@@ -3,7 +3,7 @@ import React from "react";
 import profilePicture from "../images/dp1.jpg";
 import rating from "../images/Grandmaster.png";
 
-const ProfileDetail = props => {
+const StatsDetail = props => {
   return (
     <div className="flex flex-row">
       <div className="w-1/3 self-center">
@@ -24,4 +24,4 @@ const ProfileDetail = props => {
   )
 }
 
-export default ProfileDetail;
+export default StatsDetail;
