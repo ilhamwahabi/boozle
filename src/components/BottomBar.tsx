@@ -10,6 +10,8 @@ import {
 import BottomBarItem from "./BottomBarItem";
 
 const BottomBar = () => {
+  const { pathname } = window.location;
+
   return (
     <div
       className="
@@ -17,11 +19,27 @@ const BottomBar = () => {
         fixed bottom-0 p-4 bg-white w-screen
       "
     >
-      <BottomBarItem icon={faHome} label="Home" selected />
-      <BottomBarItem icon={faHistory} label="History" />
-      <BottomBarItem icon={faChartBar} label="Statistic" />
-      <BottomBarItem icon={faFutbol} label="Match" />
-      <BottomBarItem icon={faUser} label="Profile" />
+      <BottomBarItem icon={faHome} label="Home" selected={pathname === "/"} />
+      <BottomBarItem
+        icon={faHistory}
+        label="History"
+        selected={pathname === "/history"}
+      />
+      <BottomBarItem
+        icon={faChartBar}
+        label="Statistic"
+        selected={pathname === "/statistic"}
+      />
+      <BottomBarItem
+        icon={faFutbol}
+        label="Match"
+        selected={pathname === "/match"}
+      />
+      <BottomBarItem
+        icon={faUser}
+        label="Profile"
+        selected={pathname === "/profile"}
+      />
     </div>
   );
 };

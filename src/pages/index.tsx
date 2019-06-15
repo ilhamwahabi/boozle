@@ -5,7 +5,7 @@ import FindMatch from "../components/FindMatch";
 
 import Layout from "../components/layout";
 
-function IndexPage() {
+function IndexPage(props) {
   return (
     <Layout>
       <SEO
