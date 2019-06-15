@@ -30,7 +30,6 @@ function RoomDetail(props) {
       <button onClick={setStatusMatch} className={`h-16 w-40 m-2 text-white rounded-large ${buttonColor}`}>{status}</button>
     );
   };
-  console.log(status);
   return (
     <div className="flex flex-col items-center bg-main min-h-full flex-1">
       <div className="text-center text-4xl text-primary font-medium self-start">Detail Room</div>
