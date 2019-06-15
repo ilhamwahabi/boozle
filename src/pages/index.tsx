@@ -1,22 +1,23 @@
 import React from "react";
-import { observer } from "mobx-react-lite";
 
 import SEO from "../components/seo";
 import FindMatch from "../components/findMatch";
 
-import state from "../state";
+import Navbar from "../components/Navbar";
+import BottomBar from "../components/BottomBar";
 
 function IndexPage() {
   return (
-    <div>
+    <div className="bg-gray-100 h-screen">
       <SEO
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
+      <Navbar />
       <FindMatch />
-      {/* Test {state.example} */}
+      <BottomBar />
     </div>
   );
 }
 
-export default observer(IndexPage);
+export default IndexPage;
