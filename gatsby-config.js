@@ -51,6 +51,15 @@ module.exports = {
       options: {
         linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'material icons',
+          'roboto:300,400,500,700',
+        ],
+      },
+    },
   ]
 };
