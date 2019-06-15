@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 
 import Layout from "../components/layout";
+import ToggleSearch from "../components/ToggleSearch";
 
 const position = [-6.2441985, 106.8029644];
 const position2 = [-6.240299, 106.8009648];
 const position3 = [-6.248098, 106.808964];
 
 const Search = () => {
+  const [view, setView] = useState("map");
+
   if (typeof window == "undefined") return null;
 
   return (
     <Layout>
+      <ToggleSearch view={view} toggleView={view => setView(view)} />
       <Map
         style={{ position: "fixed", top: 64 }}
         className="h-full w-screen left-0"
