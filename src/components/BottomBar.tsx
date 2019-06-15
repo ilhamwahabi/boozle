@@ -16,28 +16,37 @@ const BottomBar = () => {
     <div
       className="
         flex justify-around items-center
-        fixed bottom-0 p-4 bg-white w-screen
+        fixed left-0 bottom-0 p-4 bg-white w-screen
       "
     >
-      <BottomBarItem icon={faHome} label="Home" selected={pathname === "/"} />
       <BottomBarItem
-        icon={faHistory}
-        label="History"
-        selected={pathname === "/history"}
-      />
-      <BottomBarItem
-        icon={faChartBar}
-        label="Statistic"
-        selected={pathname === "/statistic"}
+        icon={faHome}
+        label="Home"
+        path="/"
+        selected={pathname === "/"}
       />
       <BottomBarItem
         icon={faFutbol}
         label="Match"
+        path="/match"
         selected={pathname === "/match"}
+      />
+      <BottomBarItem
+        icon={faChartBar}
+        label="Statistic"
+        path="/statistic"
+        selected={pathname === "/statistic"}
+      />
+      <BottomBarItem
+        icon={faHistory}
+        label="History"
+        path="/history"
+        selected={pathname === "/history"}
       />
       <BottomBarItem
         icon={faUser}
         label="Profile"
+        path="/profile"
         selected={pathname === "/profile"}
       />
     </div>

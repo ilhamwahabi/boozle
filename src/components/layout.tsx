@@ -6,7 +6,12 @@ const Layout = props => {
   const { children } = props;
 
   return (
-    <section className="pt-16 pb-16 bg-gray-100 min-h-screen">
+    <section
+      className="
+        py-16 px-4 bg-gray-100 min-h-screen w-screen
+        flex flex-col justify-center
+      "
+    >
       <Navbar></Navbar>
       {children}
       <BottomBar></BottomBar>
