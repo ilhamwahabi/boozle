@@ -1,7 +1,10 @@
 import React from "react";
+import { observer } from "mobx-react-lite";
 
 import SEO from "../components/seo";
 import FindMatch from "../components/findMatch";
+
+import state from "../state";
 
 function IndexPage() {
   return (
@@ -11,8 +14,9 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       <FindMatch />
+      Test {state.example}
     </div>
   );
 }
 
-export default IndexPage;
+export default observer(IndexPage);
