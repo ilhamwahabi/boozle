@@ -31,6 +31,29 @@ const dummyLeaderboard = (
   </div>
 );
 
+const dummyOverall = (
+  <div className="table">
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">1.</div>
+      <img src={Suparjo} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Arthur Bando</div>
+      <div className="table-cell align-middle pl-3 text-primary">6283</div>
+    </div>
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">2.</div>
+      <img src={Marcello} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Jekyll Hade</div>
+      <div className="table-cell align-middle pl-3 text-primary">6280</div>
+    </div>
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">3.</div>
+      <img src={Gian} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Ronaldino</div>
+      <div className="table-cell align-middle pl-3 text-primary">6274</div>
+    </div>
+  </div>
+);
+
 const Leaderboard = () => {
 
   return (
@@ -46,7 +69,7 @@ const Leaderboard = () => {
           {dummyLeaderboard}
         </TabPanel>
         <TabPanel>
-          {dummyLeaderboard}
+          {dummyOverall}
         </TabPanel>
       </Tabs>
     </div>

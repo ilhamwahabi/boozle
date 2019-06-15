@@ -22,6 +22,15 @@ var roomSchema = new mongoose.Schema({
   img: {
     type: String,
   },
+  ownApproval: {
+    type: Boolean,
+  },
+  oppApproval: {
+    type: Boolean,
+  },
+  chat: {
+    type: [],
+  },
 });
   
 module.exports = mongoose.model('Room', roomSchema);

@@ -98,8 +98,8 @@ function MatchDetail() {
                   <td className="text-center">0</td>
                   <td className="text-center">0</td>
                   <td className="text-center">6</td>
-                  <td className="text-center">0</td>
-                  <td className="text-center">6</td>
+                  <td className="text-center">1</td>
+                  <td className="text-center">5</td>
                   <td className="text-center">6</td>
                 </tr>
                 <tr className="border border-t-0 border-l-0 border-r-0 border-gray-600">
@@ -130,9 +130,9 @@ function MatchDetail() {
                   <td className="text-center">0</td>
                   <td className="text-center">0</td>
                   <td className="text-center">2</td>
-                  <td className="text-center">0</td>
+                  <td className="text-center">1</td>
                   <td className="text-center">6</td>
-                  <td className="text-center">-6</td>
+                  <td className="text-center">-5</td>
                   <td className="text-center">0</td>
                 </tr>
               </table>

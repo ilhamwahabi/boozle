@@ -35,6 +35,7 @@ var userController = require('./controllers/userController');
 // stocks
 router.get('/rooms', roomController.getAllRooms);
 router.post('/rooms', roomController.addNewRoom);
+router.post('/room-chats', roomController.addNewChat);
 router.get('/users/:id', userController.getUserDetail);
 
 // start server
