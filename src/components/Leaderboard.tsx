@@ -57,6 +57,29 @@ const dummyOverall = (
   </div>
 );
 
+const dummyTeams = (
+  <div className="table">
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">1.</div>
+      <img src={"https://image.flaticon.com/icons/svg/1825/1825252.svg"} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Kincir Angin</div>
+      <div className="table-cell align-middle pl-3 text-primary">10230</div>
+    </div>
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">2.</div>
+      <img src={"https://image.flaticon.com/icons/svg/252/252590.svg"} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Petir Kuningan</div>
+      <div className="table-cell align-middle pl-3 text-primary">10115</div>
+    </div>
+    <div className="table-row">
+      <div className="table-cell align-middle w-6">3.</div>
+      <img src={"https://image.flaticon.com/icons/svg/426/426833.svg"} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <div className="table-cell align-middle">Api Kuningan</div>
+      <div className="table-cell align-middle pl-3 text-primary">9997</div>
+    </div>
+  </div>
+);
+
 const Leaderboard = () => {
 
   return (
@@ -66,6 +89,7 @@ const Leaderboard = () => {
         <TabList>
           <Tab>Friends</Tab>
           <Tab>Overall</Tab>
+          <Tab>Teams</Tab>
         </TabList>
 
         <TabPanel>
@@ -73,6 +97,9 @@ const Leaderboard = () => {
         </TabPanel>
         <TabPanel>
           {dummyOverall}
+        </TabPanel>
+        <TabPanel>
+          {dummyTeams}
         </TabPanel>
       </Tabs>
     </div>
