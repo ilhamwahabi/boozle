@@ -8,7 +8,7 @@ const Profile = props => {
   return (
     <Layout>
       <div className="py-4 px-8">
-        <p className="text-2xl mb-4 text-primary">Profile</p>
+        <p className="text-4xl mb-4 text-primary">Profile</p>
         <ProfileDetail/>
         <p className="pt-6 text-center text-2xl text-primary mb-4">History</p>
         <div>

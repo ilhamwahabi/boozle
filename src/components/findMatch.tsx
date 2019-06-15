@@ -1,11 +1,4 @@
 import React from "react";
-// import PropTypes from "prop-types";
-// import Helmet from "react-helmet";
-// import { StaticQuery, graphql } from "gatsby";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faSearch
-// } from "@fortawesome/free-solid-svg-icons";
 
 function FindMatch() {
   return (
