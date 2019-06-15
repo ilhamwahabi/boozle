@@ -5,6 +5,9 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import Marcello from "../images/marcello.jpeg";
 import Suparjo from "../images/suparjo.jpeg";
 import Gian from "../images/gian.jpeg";
+import Arthur from '../images/arthur.jpeg';
+import Jekyll from '../images/jekyll.jpeg';
+import Ronald from '../images/ronald.jpeg';
 
 import "react-tabs/style/react-tabs.css";
 
@@ -35,19 +38,19 @@ const dummyOverall = (
   <div className="table">
     <div className="table-row">
       <div className="table-cell align-middle w-6">1.</div>
-      <img src={Suparjo} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <img src={Arthur} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
       <div className="table-cell align-middle">Arthur Bando</div>
       <div className="table-cell align-middle pl-3 text-primary">6283</div>
     </div>
     <div className="table-row">
       <div className="table-cell align-middle w-6">2.</div>
-      <img src={Marcello} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <img src={Jekyll} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
       <div className="table-cell align-middle">Jekyll Hade</div>
       <div className="table-cell align-middle pl-3 text-primary">6280</div>
     </div>
     <div className="table-row">
       <div className="table-cell align-middle w-6">3.</div>
-      <img src={Gian} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
+      <img src={Ronald} className="table-cell w-12 rounded-full mb-2 mr-4 border-gray-600"/>
       <div className="table-cell align-middle">Ronaldino</div>
       <div className="table-cell align-middle pl-3 text-primary">6274</div>
     </div>
