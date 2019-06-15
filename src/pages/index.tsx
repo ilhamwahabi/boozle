@@ -1,7 +1,7 @@
 import React from "react";
 
 import SEO from "../components/seo";
-import FindMatch from "../components/findMatch";
+import FindMatch from "../components/FindMatch";
 
 import Layout from "../components/layout";
 

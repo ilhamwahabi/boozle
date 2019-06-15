@@ -1,62 +1,35 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
-import dp1 from "../images/dp1.jpg";
+// import PropTypes from "prop-types";
+// import Helmet from "react-helmet";
+// import { StaticQuery, graphql } from "gatsby";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faSearch
+// } from "@fortawesome/free-solid-svg-icons";
 
-class FindMatch extends React.Component {
-  state = {
-    members: [
-      {
-        img: "123",
-      },
-      {
-        img: "321",
-      }
-    ],
-  };
-
-  renderUser = (member) => {
-    return(
-      <div id={member.img} className="mr-3 bg-orange-600">
-        <img src={dp1} className="w-10 rounded-full "/>
-      </div>
-    );
-  };
-
-  renderTeam = () => {
-    const rows = []
-    const { members } = this.state;
-    for (let i = 0; i < members.length; i++) {
-      rows.push(this.renderUser(members[i]));
-    };
-    if (members.length < 5) {
-      rows.push(
-        <div className="border rounded-full">+</div>
-      )
-    }
-    return rows;
-  };
-
-  render(){
-    return (
-      <div className="flex flex-col justify-center items-center bg-main">
-        <div className="text-center text-4xl">Cebongz</div>
-        <div className="w-56 flex">
-          {this.renderTeam()}
+function FindMatch() {
+  return (
+    <div className="flex flex-col items-center bg-main min-h-screen">
+      <div className="text-center ml-4 text-4xl text-primary font-medium self-start">Find Match</div>
+      <div className="text-center ml-4 text-lg mb-4 font-medium self-start">Choose your types</div>
+      <div className="flex flex-col w-full">
+        <div className="mb-3 mx-4 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+          <div className="text-center text-2xl">Friendly Match</div>
+          <div className="flex flex-row justify-center items-center">
+            <button className="mr-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">Create<br/>Room</button>
+            <div className="mx-1 text-2xl">Or</div>
+            <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">Join<br/>Room</button>
+          </div>
         </div>
-        <input className="my-1 w-56 h-8 border border-gray-400 rounded">
-          {/* <option value="">Test</option>
-          <option value="">Test</option> */}
-        </input>
-        <input className="my-1 w-56 h-8 border border-gray-400 rounded" type="datetime-local">
-          {/* <option value="">Test</option>
-          <option value="">Test</option> */}
-        </input>
-        <button className="my-3 w-64 h-10 bg-primary text-white text-xl rounded">Find Match</button>
+        <div className="mt-3 mx-4 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+          <div className="text-center text-2xl">Official Match</div>
+          <div className="flex flex-row justify-center items-center">
+            <button className="bg-primary text-xl text-white w-56 h-16 rounded-lg">Play</button>
+          </div>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default FindMatch;
