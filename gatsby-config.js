@@ -25,6 +25,18 @@ module.exports = {
         purgeOnly: ["src/css/style.css"]
       }
     },
-    `gatsby-plugin-typescript`
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Boozle`,
+        short_name: `Boozle`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+      },
+    },
   ]
 };

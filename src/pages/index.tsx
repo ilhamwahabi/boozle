@@ -9,6 +9,7 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
+      Test
     </div>
   );
 }

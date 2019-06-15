@@ -8,7 +8,8 @@
     "@types/react": "^16.8.20",
     "@types/react-dom": "^16.8.4",
     "gatsby": "2.9.4",
-    "gatsby-plugin-manifest": "2.1.1",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.3",
     "gatsby-plugin-postcss": "2.0.7",
     "gatsby-plugin-purgecss": "4.0.0",
     "gatsby-plugin-react-helmet": "3.0.12",
@@ -37,7 +38,9 @@
     "fix": "npm run fix:lint && npm run fix:prettier",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "predeploy": "yarn build",
+    "deploy": "surge public --domain https://boozle.surge.sh"
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
