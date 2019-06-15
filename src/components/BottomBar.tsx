@@ -28,7 +28,7 @@ const BottomBar = () => {
         icon={faHome}
         label="Home"
         path="/"
-        selected={pathname === "/"}
+        selected={(pathname === "/") || (pathname === "/search")}
       />
       <BottomBarItem
         icon={faFutbol}
