@@ -1,6 +1,9 @@
 import React from "react";
+import { observer } from "mobx-react-lite";
 
 import SEO from "../components/seo";
+
+import state from "../state";
 
 function IndexPage() {
   return (
@@ -9,9 +12,9 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      Test
+      Test {state.example}
     </div>
   );
 }
 
-export default IndexPage;
+export default observer(IndexPage);
