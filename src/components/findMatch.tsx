@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 
 import Modal from "react-modal";
 
@@ -114,7 +115,9 @@ function FindMatch() {
               Room
             </button>
             <div className="mx-1 text-secondary text-2xl">Or</div>
-            <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">Join<br/>Room</button>
+            <Link to="/roomsearch">
+              <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">Join<br/>Room</button>
+            </Link>
           </div>
         </div>
         <div className="mt-3 mx-4 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
