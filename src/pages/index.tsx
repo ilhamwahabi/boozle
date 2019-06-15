@@ -1,18 +1,14 @@
 import React from "react";
 
-import SEO from "../components/seo";
-
 import Layout from "../components/layout";
+import BookingButton from "../components/BookingButton";
 
-function IndexPage(props) {
+const IndexPage = () => {
   return (
     <Layout>
-      <SEO
-        title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-      />
+      <BookingButton></BookingButton>
     </Layout>
   );
-}
+};
 
 export default IndexPage;
