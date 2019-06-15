@@ -16,8 +16,12 @@ const BottomBar = () => {
     <div
       className="
         flex justify-around items-center
-        fixed left-0 bottom-0 p-4 bg-white w-screen
+        fixed left-0 bottom-0 p-4 bg-white w-screen z-10
       "
+      style={{
+        boxShadow:
+          "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+      }}
     >
       <BottomBarItem
         icon={faHome}
