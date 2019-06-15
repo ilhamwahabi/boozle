@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import PropTypes from "prop-types";
 // import Helmet from "react-helmet";
 // import { StaticQuery, graphql } from "gatsby";
@@ -12,21 +12,29 @@ import {
   faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 
-function RoomDetail() {
-  var data={
-    id: 523,
-    team: "Warriors",
-    name: "Menggila bersama Warriors",
-    time: "11.00 - 16.00",
-    location: "Oracle Arena, Jakarta",
-    date: "3 Juli 2019",
-    day: "Sabtu",
-    img: "https://image.flaticon.com/icons/svg/1825/1825326.svg",
+function RoomDetail(props) {
+  const { data } = props;
+  const [status, setStatus] = useState("Accept Match");
+  const [buttonColor, setColor] = useState("bg-primary");
+  const setStatusMatch = () => {
+    if (status === "Accept Match") {
+      setStatus("Cancel Accept");
+      setColor("bg-danger");
+    } else {
+      setStatus("Accept Match");
+      setColor("bg-primary");
+    }
+  }
+  const renderAcceptButton = () => {
+    return(
+      <button onClick={setStatusMatch} className={`h-16 w-40 m-2 text-white rounded-large ${buttonColor}`}>{status}</button>
+    );
   };
+  console.log(status);
   return (
     <div className="flex flex-col items-center bg-main min-h-full flex-1">
       <div className="text-center text-4xl text-primary font-medium self-start">Detail Room</div>
-      <div className="text-center text-lg mb-2 font-medium self-start">Chat with your Opponent</div>
+      <div className="text-center text-lg mb-2 font-medium self-start">Meet your Opponent</div>
       <div className="flex flex-col flex-1 justify-between py-2">
         <div className="mb-2 flex justify-center items-center w-full">
           <div className="w-full flex flex-col justify-start items-start shadow-lg bg-white rounded-large border">
@@ -99,8 +107,8 @@ function RoomDetail() {
           </div>
         </div>
         <div className="flex justify-center space-between">
-          <button className="h-16 w-40 bg-primary m-2 text-white rounded-large">Accept Match</button>
-          <button className="h-16 w-40 bg-gray-700 m-2 text-white rounded-large">Wait For Opponent Accept</button>
+          {renderAcceptButton()}
+          <button className="h-16 w-40 bg-gray-700 m-2 text-white rounded-large" disabled={true}>Wait For Opponent Accept</button>
         </div>
       </div>
     </div>

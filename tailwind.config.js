@@ -22,7 +22,7 @@ module.exports = {
         '84': '21rem',
         '96': '24rem',
         '100': '36rem',
-        'larger': '100px',
+        'larger': '20px',
       }
     },
     textColor: theme => ({

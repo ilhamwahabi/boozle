@@ -1,15 +1,15 @@
 import React from "react";
 
 import Layout from "../components/layout";
-import RoomPage from "../components/RoomPage";
 import RoomDetail from "../components/RoomDetail";
 
-const Rooms = () => {
+const RoomDetailPage = ({ location }) => {
   return (
     <Layout>
-      <RoomPage />
+      <RoomDetail
+        data={location.state}/>
     </Layout>
   );
 };
 
-export default Rooms;
+export default RoomDetailPage;
