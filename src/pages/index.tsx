@@ -2,14 +2,16 @@ import React from "react";
 
 import Layout from "../components/layout";
 import BookingButton from "../components/BookingButton";
-import UpcomingMatch from "../components/UpcomingMatch";
+import MyMatch from "../components/MyMatch";
 import Banner from "../components/Banner";
+import Leaderboard from "../components/Leaderboard";
 
 const IndexPage = () => {
   return (
     <Layout>
       <Banner />
-      <UpcomingMatch />
+      <MyMatch />
+      <Leaderboard/>
       <BookingButton />
     </Layout>
   );

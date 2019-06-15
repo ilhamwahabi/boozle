@@ -10,7 +10,8 @@ import {
 import BottomBarItem from "./BottomBarItem";
 
 const BottomBar = () => {
-  const { pathname } = window.location;
+  let pathname;
+  if (typeof window !== `undefined`) pathname = window.location.pathname;
 
   return (
     <div
