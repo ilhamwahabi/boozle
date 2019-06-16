@@ -136,15 +136,18 @@ function FindMatch() {
         Choose your types
       </div>
       <div className="flex flex-col w-full">
-        <div className="mb-3 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+        <div className="mb-3 flex flex-col justify-center bg-white py-4 rounded-large shadow-lg">
           <div className="text-center text-strong-secondary text-2xl pb-2">
             Friendly Match
+          </div>
+          <div className="text-sm p-2 text-center font-hairline mb-4">
+            Play with your friend without being ranked
           </div>
           <div className="flex flex-row justify-center items-center">
             <button
               className="
-                mr-2 bg-primary text-lg
-                text-white w-24 h-16
+                mx-4 bg-primary text-lg
+                text-white flex-1 h-16
                 rounded-lg
               "
               onClick={() => toggleModal(!isModalOpen)}
@@ -154,21 +157,24 @@ function FindMatch() {
               Room
             </button>
             <div className="mx-1 text-secondary text-2xl">or</div>
-            <Link to="/room/search">
-              <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">
+            <button className="mx-4 flex-1 bg-primary text-lg text-white w-24 h-16 rounded-lg">
+              <Link to="/room/search">
                 Join
                 <br />
                 Room
-              </button>
-            </Link>
+              </Link>
+            </button>
           </div>
         </div>
-        <div className="mt-3 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+        <div className="mt-3 flex flex-col justify-center bg-white py-4 rounded-large shadow-lg">
           <div className="text-center text-strong-secondary text-2xl pb-2">
             Official Match
           </div>
+          <div className="text-sm p-2 text-center font-hairline mb-4">
+            Join the league / cup and increase your rating and rank
+          </div>
           <div className="flex flex-row justify-center items-center">
-            <button className="bg-primary text-xl text-white w-56 h-16 rounded-lg">
+            <button className="bg-primary text-xl text-white w-full mx-4 h-16 rounded-lg">
               Play
             </button>
           </div>
