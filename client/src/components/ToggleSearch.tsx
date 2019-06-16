@@ -7,7 +7,7 @@ const ToggleSearch = props => {
   return (
     <div
       className="fixed bg-white py-4 px-4 z-20 flex"
-      style={{ top: 72, alignSelf: "center", borderRadius: 24 }}
+      style={{ top: 80, alignSelf: "center", borderRadius: 24 }}
     >
       <button
         style={{ outline: "none" }}
