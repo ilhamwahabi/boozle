@@ -7,7 +7,7 @@ import Layout from "../../components/layout";
 
 function renderRoom(data) {
   return (
-    <Link to={"/room/detail"} state={data} className="w-full" key={data._id}>
+    <Link to={"/league/detail"} className="w-full" key={data._id}>
       <div className="mb-2 flex justify-center items-center w-full mb-4">
         <div className="w-full flex flex-col justify-start items-start shadow-lg bg-white rounded-large border">
           <div className="flex justify-center items-center pt-2 px-2 mb-4">

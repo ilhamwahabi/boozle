@@ -42,7 +42,9 @@ const BottomBar = () => {
           pathname === "/match" ||
           pathname === "/room" ||
           pathname === "/room/search" ||
-          pathname === "/room/detail"
+          pathname === "/room/detail" ||
+          pathname === "/league" ||
+          pathname === "/league/detail"
         }
       />
       <BottomBarItem
