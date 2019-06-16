@@ -12,6 +12,7 @@ import {
   TimePicker
 } from "@material-ui/pickers";
 import DayUtils from "@date-io/dayjs";
+import Swal from "sweetalert2";
 
 import Layout from "../components/layout";
 
@@ -25,7 +26,10 @@ const PlaceDetail = () => {
       <MuiPickersUtilsProvider utils={DayUtils}>
         <div className="flex-1 shadow-lg bg-white flex flex-col justify-between">
           <div>
-            <img src="https://cataas.com/cat/says/ocean" alt="Place Detail" />
+            <img
+              src="https://images.pexels.com/photos/1383775/pexels-photo-1383775.jpeg"
+              alt="Place Detail"
+            />
             <div className="flex p-4">
               <div className="flex-1">
                 <div className="font-semibold text-lg">Lotus Futsal</div>
@@ -99,7 +103,16 @@ const PlaceDetail = () => {
                 />
               </div>
             </div>
-            <button className="bg-orange-600 text-white text-lg font-semibold mt-2 py-4 px-2 w-full">
+            <button
+              onClick={() => {
+                Swal.fire({
+                  type: "success",
+                  title: "Success",
+                  text: "Field is reserved!"
+                });
+              }}
+              className="bg-orange-600 text-white text-lg font-semibold mt-2 py-4 px-2 w-full"
+            >
               Reserve Now
             </button>
           </div>

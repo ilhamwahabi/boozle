@@ -8,13 +8,14 @@ const ListViewItem = props => {
 
   return (
     <Link to="/placedetail" state={place}>
-      <div className="flex mb-8 p-2 shadow-md rounded-lg bg-white">
-        <img
-          src="https://image.flaticon.com/icons/svg/1286/1286241.svg"
-          alt="Soccer Field"
-          className="w-16"
-        />
-        <div className="pl-8">
+      <div className="flex items-center mb-8 p-2 shadow-md rounded-lg bg-white">
+        <div style={{ flex: 2 }}>
+          <img
+            src="https://images.pexels.com/photos/1383775/pexels-photo-1383775.jpeg"
+            alt="Soccer Field"
+          />
+        </div>
+        <div className="pl-8" style={{ flex: 3 }}>
           <div className="font-semibold">Lotus Futsal</div>
           <div className="font-hairline text-xs">Karet Kuningan, Setiabudi</div>
           <div className="my-1">

@@ -38,7 +38,8 @@
     "react-helmet": "5.2.1",
     "react-leaflet": "^2.4.0",
     "react-modal": "^3.8.1",
-    "react-tabs": "^3.0.0"
+    "react-tabs": "^3.0.0",
+    "sweetalert2": "^8.12.1"
   },
   "keywords": [
     "gatsby",
