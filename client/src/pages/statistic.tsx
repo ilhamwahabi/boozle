@@ -9,14 +9,16 @@ const Stats = props => {
     <Layout>
       <div className="py-4 px-2">
         <p className="text-4xl mb-4 text-primary">Stats</p>
-        <StatsDetail/>
-        <p className="pt-6 text-center text-2xl text-primary mb-4">Personal Statistic</p>
+        <StatsDetail />
+        <p className="pt-6 text-center text-2xl text-primary mb-4">
+          Personal Statistic
+        </p>
         <div>
-          <StatsList/>
+          <StatsList />
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default Stats;

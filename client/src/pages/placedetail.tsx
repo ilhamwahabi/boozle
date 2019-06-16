@@ -16,9 +16,9 @@ import DayUtils from "@date-io/dayjs";
 import Layout from "../components/layout";
 
 const PlaceDetail = () => {
-  const [selectedDate, handleDateChange] = useState(new Date());
-  const [selectedStartTime, handleStartTimeChange] = useState(new Date());
-  const [selectedEndTime, handleEndTimeChange] = useState(new Date());
+  const [selectedDate, handleDateChange] = useState<any>(new Date());
+  const [selectedStartTime, handleStartTimeChange] = useState<any>(new Date());
+  const [selectedEndTime, handleEndTimeChange] = useState<any>(new Date());
 
   return (
     <Layout>

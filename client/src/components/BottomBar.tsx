@@ -28,13 +28,17 @@ const BottomBar = () => {
         icon={faHome}
         label="Home"
         path="/"
-        selected={(pathname === "/") || (pathname === "/search")}
+        selected={pathname === "/" || pathname === "/search"}
       />
       <BottomBarItem
         icon={faFutbol}
         label="Match"
         path="/match"
-        selected={(pathname === "/match") || (pathname === "/roomsearch") || (pathname === "/roomdetail")}
+        selected={
+          pathname === "/match" ||
+          pathname === "/roomsearch" ||
+          pathname === "/roomdetail"
+        }
       />
       <BottomBarItem
         icon={faChartBar}
@@ -42,17 +46,11 @@ const BottomBar = () => {
         path="/statistic"
         selected={pathname === "/statistic"}
       />
-      {/* <BottomBarItem
-        icon={faHistory}
-        label="History"
-        path="/history"
-        selected={pathname === "/history"}
-      /> */}
       <BottomBarItem
         icon={faUser}
         label="Profile"
         path="/profile"
-        selected={(pathname === "/profile") || (pathname === "/matchresult")}
+        selected={pathname === "/profile" || pathname === "/matchresult"}
       />
     </div>
   );

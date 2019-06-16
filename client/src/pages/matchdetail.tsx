@@ -6,7 +6,7 @@ import MatchDetail from "../components/MatchDetail";
 const Rooms = () => {
   return (
     <Layout>
-      <MatchDetail/>
+      <MatchDetail />
     </Layout>
   );
 };

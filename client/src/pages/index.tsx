@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
       <Banner />
       <MyMatch />
-      <Leaderboard/>
+      <Leaderboard />
       <BookingButton />
     </Layout>
   );

@@ -13,7 +13,6 @@ const ToggleSearch = props => {
         style={{ outline: "none" }}
         className={cx([
           "mr-4",
-
           "font-medium",
           { "text-orange-600": view === "map", "text-gray-600": view !== "map" }
         ])}
@@ -26,7 +25,6 @@ const ToggleSearch = props => {
         style={{ outline: "none" }}
         className={cx([
           "ml-4",
-
           "font-medium",
           { "text-orange-600": view !== "map", "text-gray-600": view === "map" }
         ])}

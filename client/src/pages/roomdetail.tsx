@@ -6,8 +6,7 @@ import RoomDetail from "../components/RoomDetail";
 const RoomDetailPage = ({ location }) => {
   return (
     <Layout>
-      <RoomDetail
-        data={location.state}/>
+      <RoomDetail data={location.state} />
     </Layout>
   );
 };

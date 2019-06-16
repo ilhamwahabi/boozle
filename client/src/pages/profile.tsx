@@ -9,14 +9,14 @@ const Profile = props => {
     <Layout>
       <div className="py-4 px-2">
         <p className="text-4xl mb-4 text-primary">Profile</p>
-        <ProfileDetail/>
+        <ProfileDetail />
         <p className="pt-6 text-center text-2xl text-primary mb-4">History</p>
         <div>
-          <HistoryList/>
+          <HistoryList />
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default Profile;
