@@ -7,7 +7,7 @@ const HistoryList = props => {
   return (
     <div>
       <Link to="/matchresult">
-        <div className="rounded shadow-lg bg-white py-2 px-4 m-2 flex flex-row">
+        <div className="rounded shadow-lg bg-white py-2 px-4 m-2 mb-6 flex flex-row">
           <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
           <div className="pl-4">
             <p className="text-xl text-strong-secondary">Lapangan Lotus</p>
@@ -17,7 +17,7 @@ const HistoryList = props => {
           </div>
         </div>
       </Link>
-      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 flex flex-row">
+      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 mb-6 flex flex-row">
         <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
         <div className="pl-4">
           <p className="text-xl text-strong-secondary">Vico Futsal</p>
@@ -26,7 +26,7 @@ const HistoryList = props => {
           <p className="mt-4 text-xs text-secondary">07/06/19 09:21:23</p>
         </div>
       </div>
-      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 flex flex-row">
+      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 mb-6 flex flex-row">
         <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
         <div className="pl-4">
           <p className="text-xl text-strong-secondary">HDT Centre</p>
@@ -35,7 +35,7 @@ const HistoryList = props => {
           <p className="mt-4 text-xs text-secondary">13/05/19 10:44:39</p>
         </div>
       </div>
-      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 flex flex-row">
+      <div className="rounded shadow-lg bg-white py-2 px-4 m-2 mb-6 flex flex-row">
         <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
         <div className="pl-4">
           <p className="text-xl text-strong-secondary">Lapangan Lotus</p>

@@ -12,7 +12,7 @@ import Ronald from "../images/ronald.jpeg";
 import "react-tabs/style/react-tabs.css";
 
 const dummyLeaderboard = (
-  <div className="table">
+  <div className="table bg-white pt-2">
     <div className="table-row flex justify-center items-center">
       <div className="table-cell align-middle w-6">1.</div>
       <img
@@ -65,7 +65,7 @@ const dummyLeaderboard = (
 );
 
 const dummyOverall = (
-  <div className="table">
+  <div className="table bg-white pt-2">
     <div className="table-row flex justify-center items-center">
       <div className="table-cell align-middle w-6">1.</div>
       <img
@@ -118,7 +118,7 @@ const dummyOverall = (
 );
 
 const dummyTeams = (
-  <div className="table">
+  <div className="table bg-white pt-2">
     <div className="table-row flex justify-center items-center">
       <div className="table-cell align-middle w-6">1.</div>
       <img
@@ -175,7 +175,7 @@ const Leaderboard = () => {
     <div className="mb-6">
       <h1 className="text-lg text-primary mb-2">Leaderboard</h1>
       <Tabs>
-        <TabList>
+        <TabList className="mb-0">
           <Tab>Friends</Tab>
           <Tab>Overall</Tab>
           <Tab>Teams</Tab>

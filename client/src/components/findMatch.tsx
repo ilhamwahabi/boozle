@@ -129,14 +129,14 @@ function FindMatch() {
 
   return (
     <div className="flex flex-col items-center bg-main min-h-screen">
-      <div className="text-center ml-4 text-4xl text-primary font-medium self-start">
+      <div className="text-center text-4xl text-primary font-medium self-start">
         Find Match
       </div>
-      <div className="text-center ml-4 text-lg text-secondary mb-4 font-medium self-start">
+      <div className="text-center text-lg text-secondary mb-4 font-medium self-start">
         Choose your types
       </div>
       <div className="flex flex-col w-full">
-        <div className="mb-3 mx-4 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+        <div className="mb-3 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
           <div className="text-center text-strong-secondary text-2xl pb-2">
             Friendly Match
           </div>
@@ -153,7 +153,7 @@ function FindMatch() {
               <br />
               Room
             </button>
-            <div className="mx-1 text-secondary text-2xl">Or</div>
+            <div className="mx-1 text-secondary text-2xl">or</div>
             <Link to="/roomsearch">
               <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">
                 Join
@@ -163,7 +163,7 @@ function FindMatch() {
             </Link>
           </div>
         </div>
-        <div className="mt-3 mx-4 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
+        <div className="mt-3 flex flex-col justify-center bg-white h-32 rounded-large shadow-lg">
           <div className="text-center text-strong-secondary text-2xl pb-2">
             Official Match
           </div>
