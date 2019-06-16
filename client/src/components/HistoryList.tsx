@@ -11,7 +11,7 @@ const HistoryList = props => {
           <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
           <div className="pl-4">
             <p className="text-xl text-strong-secondary">Lapangan Lotus</p>
-            <p className="text-sm">Fri, 21 Jun 2019</p>
+            <p className="text-sm">Wed, 11 Jun 2019</p>
             <p className="text-sm">19:00 - 21:00</p>
             <p className="mt-4 text-xs text-secondary">20/06/19 18:24:32</p>
           </div>
