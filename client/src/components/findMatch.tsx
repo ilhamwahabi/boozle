@@ -175,7 +175,7 @@ function FindMatch() {
           </div>
           <div className="flex flex-row justify-center items-center">
             <button className="bg-primary text-xl text-white w-full mx-4 h-16 rounded-lg">
-              Play
+              <Link to="/league">Play</Link>
             </button>
           </div>
         </div>
