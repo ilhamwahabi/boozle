@@ -28,7 +28,11 @@ const BottomBar = () => {
         icon={faHome}
         label="Home"
         path="/"
-        selected={pathname === "/" || pathname === "/search"}
+        selected={
+          pathname === "/" ||
+          pathname === "/search" ||
+          pathname === "/placedetail"
+        }
       />
       <BottomBarItem
         icon={faFutbol}
@@ -36,6 +40,7 @@ const BottomBar = () => {
         path="/match"
         selected={
           pathname === "/match" ||
+          pathname === "/room" ||
           pathname === "/roomsearch" ||
           pathname === "/roomdetail"
         }
@@ -50,7 +55,11 @@ const BottomBar = () => {
         icon={faUser}
         label="Profile"
         path="/profile"
-        selected={pathname === "/profile" || pathname === "/matchresult"}
+        selected={
+          pathname === "/profile" ||
+          pathname === "/matchresult" ||
+          pathname === "/matchdetail"
+        }
       />
     </div>
   );
