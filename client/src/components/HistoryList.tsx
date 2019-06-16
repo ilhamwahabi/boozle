@@ -6,7 +6,7 @@ import FutsalIcon from "../images/futsal-icon.png";
 const HistoryList = props => {
   return (
     <div>
-      <Link to="/matchresult">
+      <Link to="/match/result">
         <div className="rounded shadow-lg bg-white py-2 px-4 m-2 mb-6 flex flex-row">
           <img src={FutsalIcon} className="w-20 h-20 self-center rounded-lg" />
           <div className="pl-4">

@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import MatchDetail from "../components/MatchDetail";
+import Layout from "../../components/layout";
+import MatchDetail from "../../components/MatchDetail";
 
 const Rooms = () => {
   return (

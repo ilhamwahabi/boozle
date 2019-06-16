@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 
-import Layout from "../components/layout";
-import ToggleSearch from "../components/ToggleSearch";
-import ListView from "../components/ListView";
+import Layout from "../../components/layout";
+import ToggleSearch from "../../components/ToggleSearch";
+import ListView from "../../components/ListView";
 
 const position = [-6.2441985, 106.8029644];
 const position2 = [-6.240299, 106.8009648];

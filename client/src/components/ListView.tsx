@@ -7,7 +7,7 @@ const ListViewItem = props => {
   const { place } = props;
 
   return (
-    <Link to="/placedetail" state={place}>
+    <Link to="/place/detail" state={place}>
       <div className="flex items-center mb-8 p-2 shadow-md rounded-lg bg-white">
         <div style={{ flex: 2 }}>
           <img

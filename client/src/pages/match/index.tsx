@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
-import FindMatch from "../components/findMatch";
+import FindMatch from "../../components/findMatch";
 
 const Match = () => {
   return (

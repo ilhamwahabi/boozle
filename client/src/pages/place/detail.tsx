@@ -14,7 +14,7 @@ import {
 import DayUtils from "@date-io/dayjs";
 import Swal from "sweetalert2";
 
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
 const PlaceDetail = () => {
   const [selectedDate, handleDateChange] = useState<any>(new Date());

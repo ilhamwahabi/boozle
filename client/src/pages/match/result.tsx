@@ -1,8 +1,8 @@
 import React from "react";
 
-import MatchDetail from "../components/MatchDetail";
+import MatchDetail from "../../components/MatchDetail";
 
-import Layout from "../components/layout";
+import Layout from "../../components/layout";
 
 const MarchResult = () => {
   return (

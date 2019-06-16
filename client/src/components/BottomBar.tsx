@@ -30,8 +30,8 @@ const BottomBar = () => {
         path="/"
         selected={
           pathname === "/" ||
-          pathname === "/search" ||
-          pathname === "/placedetail"
+          pathname === "/place" ||
+          pathname === "/place/detail"
         }
       />
       <BottomBarItem
@@ -41,8 +41,8 @@ const BottomBar = () => {
         selected={
           pathname === "/match" ||
           pathname === "/room" ||
-          pathname === "/roomsearch" ||
-          pathname === "/roomdetail"
+          pathname === "/room/search" ||
+          pathname === "/room/detail"
         }
       />
       <BottomBarItem
@@ -57,8 +57,8 @@ const BottomBar = () => {
         path="/profile"
         selected={
           pathname === "/profile" ||
-          pathname === "/matchresult" ||
-          pathname === "/matchdetail"
+          pathname === "/match/result" ||
+          pathname === "/match/detail"
         }
       />
     </div>

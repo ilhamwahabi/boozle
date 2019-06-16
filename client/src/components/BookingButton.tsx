@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const BookingButton = () => {
   return (
     <button className="bg-primary px-8 py-2 text-xl text-white rounded-sm">
-      <Link to="/search">Reserve Venues</Link>
+      <Link to="/place">Reserve Venues</Link>
     </button>
   );
 };

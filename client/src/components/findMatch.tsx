@@ -154,7 +154,7 @@ function FindMatch() {
               Room
             </button>
             <div className="mx-1 text-secondary text-2xl">or</div>
-            <Link to="/roomsearch">
+            <Link to="/room/search">
               <button className="ml-2 bg-primary text-lg text-white w-24 h-16 rounded-lg">
                 Join
                 <br />

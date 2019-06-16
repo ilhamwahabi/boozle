@@ -9,7 +9,7 @@ import {
 
 function renderRoom(data) {
   return (
-    <Link to={"/roomdetail"} state={data} className="w-full" key={data._id}>
+    <Link to={"/room/detail"} state={data} className="w-full" key={data._id}>
       <div className="mb-2 flex justify-center items-center w-full">
         <div className="w-full flex flex-col justify-start items-start shadow-lg bg-white rounded-large border">
           <div className="flex justify-center items-center pt-2">

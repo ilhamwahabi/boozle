@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import RoomDetail from "../components/RoomDetail";
+import Layout from "../../components/layout";
+import RoomDetail from "../../components/RoomDetail";
 
 const RoomDetailPage = ({ location }) => {
   return (
