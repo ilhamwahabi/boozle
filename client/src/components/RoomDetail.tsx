@@ -9,6 +9,25 @@ import axios from "axios";
 function RoomDetail(props) {
   const { data } = props;
 
+  const renderChat = chat => {
+    if (chat.type === "you") {
+      return (
+        <div className="bg-blue-600 rounded-large flex flex-col px-4 py-2 m-1 justify-end items-end self-end">
+          <div className="text-white">{chat.message}</div>
+          <div className="text-gray-400 text-xs self-end">{chat.time}</div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="bg-gray-600 rounded-large flex flex-col p-4 m-1">
+          <div className="text-blue-200 font-semibold">Opponent</div>
+          <div className="text-white">{chat.message}</div>
+          <div className="text-gray-400 text-xs self-end">{chat.time}</div>
+        </div>
+      );
+    }
+  };
+
   const [bothAccepted, setBothStatus] = useState(false);
   const [status, setStatus] = useState("Accept Match");
   const [buttonColor, setColor] = useState("bg-primary");
@@ -26,24 +45,6 @@ function RoomDetail(props) {
     } else {
       setStatus("Accept Match");
       setColor("bg-primary");
-    }
-  };
-  const renderChat = chat => {
-    if (chat.type === "you") {
-      return (
-        <div className="bg-blue-600 rounded-large flex flex-col px-4 py-2 m-1 justify-end items-end self-end">
-          <div className="text-white">{chat.message}</div>
-          <div className="text-gray-400 text-xs self-end">{chat.time}</div>
-        </div>
-      );
-    } else {
-      return (
-        <div className="bg-gray-600 rounded-large flex flex-col p-4 m-1">
-          <div className="text-blue-200 font-semibold">Opponent</div>
-          <div className="text-white">{chat.message}</div>
-          <div className="text-gray-400 text-xs self-end">{chat.time}</div>
-        </div>
-      );
     }
   };
 
